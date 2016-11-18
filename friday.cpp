@@ -17,7 +17,7 @@ int main() {
     startyr = 1900;
     endyr = startyr + years - 1;
     tracker = 2; //tracker % 7 == 0 - Saturday... tracker % 7 == 6 - Friday
-    int regmonth[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 3es1, 30, 31};
+    int regmonth[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     int leapmonth[12] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; //if current year % 4 == 0 && current year % 100 != 0, we use this
     int days[7] = {0}; //Former error lay in here: you MUST intialize it this way to fill the array with all zeros...
     for(int i = startyr; i <= endyr; i++){
